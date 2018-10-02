@@ -62,7 +62,7 @@ predict(tree, newdata=ndata, type='prob')
 
 
 #logistic regression
-logitmodel1=glm(placement~., data=students, family = 'binomial')
+logitmodel1=glm(placement~gender, data=students[,-1], family = 'binomial')
 logitmodel1
 summary(logitmodel1)
 head(students)
